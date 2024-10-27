@@ -6,7 +6,7 @@ import WeddingTwo from '@/assets/wedding-2.jpg'
 import WeddingThree from '@/assets/wedding-3.jpg'
 import WeddingFour from '@/assets/wedding-4.jpg'
 import WeddingFive from '@/assets/wedding-5.jpg'
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 
 const ImageSlider = () => {

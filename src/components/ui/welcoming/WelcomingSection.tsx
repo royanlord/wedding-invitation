@@ -85,7 +85,7 @@ const WelcomingSection = () => {
                             Welcome to
                         </h2>
                         <h2 className="font-semibold font-butler text-center my-2 text-3xl">
-                            Tiffany & Jared's
+                            Tiffany & Jared&rsquo;s
                         </h2>
                         <h2 className="font-semibold font-butler text-center text-3xl">
                             Wedding Website
