@@ -10,7 +10,7 @@ import { useEffect, useState } from "react";
 
 
 const ImageSlider = () => {
-    const [currentIndex, setCurrentIndex] = useState(1);
+    const [currentIndex, setCurrentIndex] = useState<number>(1);
 
     const images = [
         WeddingOne, WeddingTwo, WeddingThree, WeddingFour, WeddingFive

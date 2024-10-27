@@ -13,8 +13,8 @@ const WelcomingSection = () => {
         WeddingThree, WeddingTwo, WeddingOne, WeddingFour, WeddingFive
     ]
 
-    const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    const [fade, setFade] = useState(true);
+    const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
+    const [fade, setFade] = useState<boolean>(true);
 
     useEffect(() => {
         const interval = setInterval(() => {
