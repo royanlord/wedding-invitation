@@ -25,16 +25,18 @@ const CoverInvitation = () => {
             }}
         >
             <div className="my-10 mx-10 text-white">
-                <h1 className="text-lg font-bold uppercase">Wedding Announcement</h1>
+                <h1 className="text-lg font-bold uppercase" data-aos="fade-up" data-aos-duration="900">Wedding Announcement</h1>
                 <h1 className="text-7xl mt-5 w-1/2 font-butler">TIFFANY & JARED</h1>
-                <p className="mt-8 w-3/4 text-lg font-newsreaderitalic">
-                    <q>
-                        Aku ingin mencintaimu dengan sederhana; dengan kata yang tak sempat diucapkan kayu kepada api yang menjadikannya abu. Aku ingin mencintaimu dengan sederhana; dengan isyarat yang tak sempat disampaikan awan kepada hujan yang menjadikannya tiada.
-                    </q>
-                </p>
-                <p className="w-3/4 text-lg font-newsreaderitalic">
-                    &ndash; Sapardi Djoko Damono
-                </p>
+                <div data-aos="fade-up" data-aos-duration="1000">
+                    <p className="mt-8 w-3/4 text-lg font-newsreaderitalic">
+                        <q>
+                            Aku ingin mencintaimu dengan sederhana; dengan kata yang tak sempat diucapkan kayu kepada api yang menjadikannya abu. Aku ingin mencintaimu dengan sederhana; dengan isyarat yang tak sempat disampaikan awan kepada hujan yang menjadikannya tiada.
+                        </q>
+                    </p>
+                    <p className="w-3/4 text-lg font-newsreaderitalic">
+                        &ndash; Sapardi Djoko Damono
+                    </p>
+                </div>
             </div>
             <div className="hidden">
                 <ReactPlayer
