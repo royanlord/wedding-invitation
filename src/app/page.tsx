@@ -5,14 +5,23 @@ import WelcomingCover from "@/components/ui/welcoming/WelcomingCover";
 import useOpen from "@/stores/store";
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 
 export default function Home() {
     const { isOpen } = useOpen();
+    const route = useRouter();
 
     useEffect(() => {
         AOS.init()
     }, [])
+    
+    useEffect(() => {
+        if (!isOpen) {
+            route.push('/')
+        }
+
+    }, [isOpen, route]);
 
     return (
         <div className="w-full lg:flex">
