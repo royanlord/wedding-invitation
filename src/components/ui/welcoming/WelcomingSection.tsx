@@ -1,14 +1,17 @@
 'use client'
 
 import { useEffect, useState } from "react";
-import ImageSlider from "../imageslider/ImageSlider"
 import WeddingOne from '@/assets/wedding-1.jpg'
 import WeddingTwo from '@/assets/wedding-2.jpg'
 import WeddingThree from '@/assets/wedding-3.jpg'
 import WeddingFour from '@/assets/wedding-4.jpg'
 import WeddingFive from '@/assets/wedding-5.jpg'
 
-const WelcomingSection = () => {
+interface WelcomingSectionProps {
+    id: string;
+}
+
+const WelcomingSection = ({ id }: WelcomingSectionProps) => {
     const images = [
         WeddingThree, WeddingTwo, WeddingOne, WeddingFour, WeddingFive
     ]
@@ -32,7 +35,7 @@ const WelcomingSection = () => {
 
     return (
         <>
-            <div id='section1' className="h-screen flex flex-col items-center justify-center relative overflow-hidden bg-black">
+            <div id={id} className="h-screen flex flex-col items-center justify-center relative overflow-hidden bg-black">
                 <div
                     className={`absolute top-0 left-0 w-full h-full transition-opacity duration-1000 ${fade ? 'opacity-100' : 'opacity-70'}`}
                     style={{
@@ -42,7 +45,6 @@ const WelcomingSection = () => {
                     }}
                 ></div>
 
-                {/* Konten Utama */}
                 <div className="relative z-10 text-white mx-10">
                     <h1 className="text-lg font-bold uppercase text-center">Wedding Announcement</h1>
                     <div className="mt-48 mb-14 text-4xl text-center">
@@ -51,7 +53,6 @@ const WelcomingSection = () => {
                     </div>
                 </div>
 
-                {/* Scroll Button */}
                 <div className="pt-48 w-full relative z-10">
                     <div 
                         className="float-end pe-10 flex items-center gap-2 cursor-pointer"
@@ -71,33 +72,6 @@ const WelcomingSection = () => {
                         </svg>
                     </div>
                 </div>
-            </div>
-            <div
-                id="section2"
-                className="h-screen flex flex-col"
-            >
-                <div className="mx-10 flex flex-col my-12 items-center ">
-                    <h1 className="font-bold text-center lg:w-2/5 w-2/4">
-                        DEAR MR-MRS-MS, FAMILY & FRIENDS
-                    </h1>
-                    <div className="my-10">
-                        <h2 className="font-semibold font-butler text-center text-3xl">
-                            Welcome to
-                        </h2>
-                        <h2 className="font-semibold font-butler text-center my-2 text-3xl">
-                            Tiffany & Jared&rsquo;s
-                        </h2>
-                        <h2 className="font-semibold font-butler text-center text-3xl">
-                            Wedding Website
-                        </h2>
-                    </div>
-                    <p className="text-center italic font-newsreader w-11/12">
-                        Together with joyful hearts and the grace of God, we joyfully announce the upcoming of our marriage.
-                    </p>
-
-                    {/* carousel image */}
-                </div>
-                <ImageSlider /> 
             </div>
         </>
     )
