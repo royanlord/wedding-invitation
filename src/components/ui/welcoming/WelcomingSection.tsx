@@ -53,7 +53,7 @@ const WelcomingSection = ({ id }: WelcomingSectionProps) => {
                     </div>
                 </div>
 
-                <div className="pt-48 w-full relative z-10">
+                <div className="pt-48 w-full relative z-10 select-none">
                     <div 
                         className="lg:justify-end justify-center lg:pe-10 flex items-center gap-2 cursor-pointer"
                         onClick={() => window.location.href = "#section2"}
